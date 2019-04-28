@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>SWA</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <style>
+        .fakeimg {
+            height: 200px;
+            background: #aaa;
+        }
+    </style>
+</head>
+
+<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+    <a class="navbar-brand" href="/">BMI</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="collapsibleNavbar">
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link active" href="/">Calculator</a>
+            </li>
+            <!-- <li class="nav-item">
+                <a class="nav-link" href="/bill">Billing</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/setting">Setting</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/help">Help</a> -->
+            </li>
+        </ul>
+    </div>
+</nav>
+<div class="container" style="margin-top:30px">
+    <h1>
+        <%= title %>
+    </h1>
+
+    <table class="table table-hover table-dark">
+        <thead>
+            <tr>
+                <th scope="col">Height</th>
+                <th scope="col">Weight</th>
+                <th scope="col">Your BMI</th>
+                <th scope="col">Standard</th>
+                <th scope="col">Result</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><%= message.Height %></td>
+                <td><%= message.Weight %></td>
+                <td><%= message.BMI %></td>
+                <td><%= message.stand %></td>
+                <td><%= message.detail %></td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+</html>
