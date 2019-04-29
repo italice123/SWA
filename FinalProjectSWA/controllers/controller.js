@@ -10,12 +10,15 @@ function getsex(req, res, ) {
 }
 
 function calcu(req, res) {
+    var a = req.body.A;
+    var b = req.body.B;
+    var s = req.body.sex;
     var result;
-    switch (req.body.sex) {
-        case "Male":
+    switch (s) {
+        case "male":
             result = cal.men(req, res);
             break;
-        case "Female":
+        case "female":
             result = cal.women(req, res);
             break;
     }
@@ -23,6 +26,6 @@ function calcu(req, res) {
 
 
 module.exports = {
-    getsex, 
+    getsex,
     calcu
 }

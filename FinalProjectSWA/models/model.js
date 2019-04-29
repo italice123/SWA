@@ -37,7 +37,7 @@ function men(req, res) {
 
     }
 
-    return res.render("result", { title: "Your BMI Result", message: result });
+    return res.json(result);
 }
 
 function women(req, res) {
@@ -65,7 +65,7 @@ function women(req, res) {
         }
 
     }
-    return res.render("result", { title: "Your BMI Result", message: result });
+    return res.json(result);
 }
 
 
